@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taxi Rider Prediction</title>
+    <style>
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px #33ccff, 0 0 10px #66ffff, 0 0 15px #66ffff;
+            }
+            50% {
+                box-shadow: 0 0 20px #33ccff, 0 0 30px #66ffff, 0 0 40px #66ffff;
+            }
+            100% {
+                box-shadow: 0 0 5px #33ccff, 0 0 10px #66ffff, 0 0 15px #66ffff;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+            margin: 0;
+            padding: 0;
+            animation: backgroundAnimation 15s ease infinite;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            width: 420px;
+            margin: 80px auto;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            animation: glow 2s infinite;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333333;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: 500;
+            color: #444;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        input[type="number"]:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 8px #4CAF50;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background 0.5s;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(to right, #5b86e5, #36d1dc);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Taxi Weekly Riders Prediction</h2>
+        <form method="POST" action="/predict">
+            <label>Price per Week:</label>
+            <input type="number" name="Priceperweek" required step="any">
+
+            <label>Population:</label>
+            <input type="number" name="Population" required step="any">
+
+            <label>Monthly Income:</label>
+            <input type="number" name="Monthlyincome" required step="any">
+
+            <label>Average Parking per Month:</label>
+            <input type="number" name="Averageparkingpermonth" required step="any">
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
