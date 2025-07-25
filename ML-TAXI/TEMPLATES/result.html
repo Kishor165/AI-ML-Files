@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        @keyframes pulseGlow {
+            0% {
+                box-shadow: 0 0 10px #ff6ec4, 0 0 20px #ff6ec4, 0 0 30px #ff6ec4;
+            }
+            50% {
+                box-shadow: 0 0 20px #7873f5, 0 0 30px #7873f5, 0 0 40px #7873f5;
+            }
+            100% {
+                box-shadow: 0 0 10px #ff6ec4, 0 0 20px #ff6ec4, 0 0 30px #ff6ec4;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f9f9f9, #d7f9ff);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .result-box {
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            animation: pulseGlow 3s infinite;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-top: 0;
+            background: linear-gradient(to right, #ff6ec4, #7873f5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background: linear-gradient(to right, #36d1dc, #5b86e5);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background: linear-gradient(to right, #5b86e5, #36d1dc);
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>Predicted Weekly Riders Revenue:</h2>
+        <h1>₹{{ prediction }}</h1>
+        <a href="/">Predict Again</a>
+    </div>
+</body>
+</html>
