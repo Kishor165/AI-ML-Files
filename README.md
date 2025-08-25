@@ -1,4 +1,4 @@
-📂 Project Repository Overview
+## 📂 Project Repository Overview
 
 This repository contains multiple Jupyter Notebooks and Python scripts demonstrating Data Analysis, Machine Learning, NLP, Databases, and Big Data Processing. Each file focuses on a specific task, from Exploratory Data Analysis (EDA) to Deep Learning with BERT and TensorFlow.
 
@@ -36,26 +36,18 @@ This repository contains multiple Jupyter Notebooks and Python scripts demonstra
 | `retail_sales_data-3.ipynb`       | Retail sales data analysis and forecasting.                                 |
 | `README.md`                       | Project documentation.                                                      |
 
-🛠 Technologies Used
+## 🛠 Technologies Used  
 
-Python 🐍
+- **Python** 🐍  
+- **Jupyter Notebook**  
+- **Scikit-learn** – ML models & pipelines  
+- **TensorFlow, BERT** – Deep Learning & NLP  
+- **Pandas, NumPy** – Data manipulation & computation  
+- **Matplotlib, Seaborn** – Data visualization  
+- **MySQL** – Database management  
+- **PySpark** – Big Data processing  
+- **BeautifulSoup, requests** – Web scraping  
+- **Clustering Algorithms** – KMeans, DBSCAN  
 
-Jupyter Notebook
-
-Scikit-learn (ML models & pipelines)
-
-TensorFlow, BERT (deep learning & NLP)
-
-Pandas, NumPy (data manipulation & computation)
-
-Matplotlib, Seaborn (visualization)
-
-MySQL (database management)
-
-PySpark (big data processing)
-
-BeautifulSoup, requests (web scraping)
-
-Clustering Algorithms: KMeans, DBSCAN
 
 ✨ This repository demonstrates skills in Data Science, NLP, Machine Learning, Deep Learning, Databases, and End-to-End Data Pipelines.
